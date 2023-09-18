@@ -11,13 +11,14 @@
 #include <Eigen/LU>
 #include <Eigen/SVD>
 
+#include "yUtil.h"
 #include "ofxImGui.h"
 #include "video_capture.h"
 #include "graphics.h"
-//#include "realsense.h"
+#include "realsense.h"
 #include "hid.h"
 #include "manipulator3d.h"
-#include "yUtil.h"
+
 
 
 class ofApp : public ofBaseApp{
@@ -39,6 +40,7 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     void mouseScrolled(ofMouseEventArgs& mouse);
+    void exit();
     
     ofLight pointLight;
     ofLight spotLight;
@@ -57,9 +59,18 @@ public:
     //--imGUI
     ofxImGui::Gui gui;
     void gui_draw();
-    //-------gizmo
+    //-------3d manipulator
     Manipulator3d mygizmo;
+    Manipulator3d minpulator2;
     //-------hidapi
     HID_camera *hid_camera;
-        
+    //--videocapture
+    ofImage endoscope_image;
+    capture_thread endoscope_capture;
+    //----realsense
+    rs265 real_sense;
+    ofxAssimpModelLoader realsense_model;
+    //
+    ofFbo virtual_image;
+    ofCamera endoscope_camera;
 };

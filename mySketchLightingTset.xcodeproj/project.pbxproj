@@ -126,6 +126,7 @@
 		E2F85AA52AB3D42800EA7EC9 /* graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graphics.h; sourceTree = "<group>"; };
 		E2F85AAA2AB42B0200EA7EC9 /* yUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yUtil.h; sourceTree = "<group>"; };
 		E2F85AAB2AB42BEA00EA7EC9 /* yUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = yUtil.cpp; sourceTree = "<group>"; };
+		E2F85AAE2AB5BA8400EA7EC9 /* realsense.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = realsense.h; sourceTree = "<group>"; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../../libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../../libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
 		E42962AE2163EDD300A6A9E2 /* ofNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofNode.h; path = ../../../libs/openFrameworks/3d/ofNode.h; sourceTree = SOURCE_ROOT; };
@@ -854,6 +855,7 @@
 				E2A2C6F62AB1EF7B00EEEB9C /* manipulator3d.h */,
 				E2F85AAA2AB42B0200EA7EC9 /* yUtil.h */,
 				E2F85AAB2AB42BEA00EA7EC9 /* yUtil.cpp */,
+				E2F85AAE2AB5BA8400EA7EC9 /* realsense.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
